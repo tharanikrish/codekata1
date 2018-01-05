@@ -1,18 +1,17 @@
 #include<stdio.h>
 int main()
 {
-int a;
-printf("enter your number:");
-scanf("%d",a);
-printf("the number is: %d",a);
-if(a<0)
+double number;
+printf("Enter a number:");
+scanf("%lf",&number);
+if(number<=0.0)
 {
-printf("the number is negative");
-}
-elseif(a>0)
-{
-printf("positive");
-else
+if(number==0.0)
 printf("zero");
+else
+printf("Negative");
 }
+else
+printf("positive");
+return 0;
 }
